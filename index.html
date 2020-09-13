@@ -15,26 +15,33 @@
 <!-- axios -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.js" integrity="sha512-nqIFZC8560+CqHgXKez61MI0f9XSTKLkm0zFVm/99Wt0jSTZ7yeeYwbzyl0SGn/s8Mulbdw+ScCG41hmO2+FKw==" crossorigin="anonymous"></script>
 <!-- end axios -->
+
+<script src="index.js"></script>
 </head>
 <body>
     <div class="row justify-content-center">
     <form>
         <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label for="login">Email address</label>
+            <input type="text" class="form-control" id="login" aria-describedby="emailHelp">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password">
         </div>
         <!-- <div class="form-group form-check">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div> -->
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary" onclick="auth(event)">Submit</button>
+
         </form>
+
     </div>  
-   
+    <!-- <div class="row justify-content-center">
+        <button type="submit" class="btn btn-primary" onclick="auth()">Submit</button>
+    </div> -->
+
 </body>
 </html>
